@@ -1,7 +1,5 @@
 # PHYSARUM SIMULATOR
 
-[link to website (not mine btw)](https://cargocollective.com/sagejenson/physarum)
-
 ## Installation
 
 This project uses the Processing Library to render graphics. Although this library is designed for novices to learn how to code, its very basic graphical capabilities allowed me to prototype this
