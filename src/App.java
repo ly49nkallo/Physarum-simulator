@@ -12,21 +12,21 @@ public class App extends PApplet {
     public final float agent_speed = 1f;
     public final float collision_buffer = 2f;
     public final float sensor_distance = 10f;
-    public final float sensor_size = 5f;
-    public final float sensor_angle = PApplet.PI / 6;
-    public final float rotation_angle = PApplet.PI / 6;
+    public final float sensor_size = 2f;
+    public final float sensor_angle = PApplet.PI / 4;
+    public final float rotation_angle = PApplet.PI / 4;
     public final float decay_rate = 0.995f;
     public final int blur_kernel_size = 3;
+    public final int num_of_particles = 3000;
     public int clock = 0;
     
-    public static void main(String[] args){
-        System.out.println("Hello, World!");
+    public static void main(String[] args) {
         PApplet.main(App.class);
     }
     public void setup() {
         ctx = this;
         tmap = new TrailMap(ctx);
-        dmap = new DataMap(ctx, 450);
+        dmap = new DataMap(ctx, this.num_of_particles);
         frameRate(fps);
     }
 
